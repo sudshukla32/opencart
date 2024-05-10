@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="0" failed="0" skipped="2">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-05-10T13:00:23 GMT-07:00" name="Suite" finished-at="2024-05-10T13:00:40 GMT-07:00" duration-ms="17077">
+    <groups>
+      <group name="regression">
+        <method signature="tc_2_Loginpage.loginn()[pri:0, instance:testCases.tc_2_Loginpage@351d00c0]" name="loginn" class="testCases.tc_2_Loginpage"/>
+      </group> <!-- regression -->
+      <group name="sanity">
+        <method signature="Tc_1_AccountRegistration.implement()[pri:0, instance:testCases.Tc_1_AccountRegistration@f6efaab]" name="implement" class="testCases.Tc_1_AccountRegistration"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test started-at="2024-05-10T13:00:23 GMT-07:00" name="Test" finished-at="2024-05-10T13:00:40 GMT-07:00" duration-ms="17077">
+      <class name="testCases.tc_2_Loginpage">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.tc_2_Loginpage@351d00c0]" started-at="2024-05-10T13:00:32 GMT-07:00" name="setup" finished-at="2024-05-10T13:00:40 GMT-07:00" duration-ms="7149" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=121.0.6167.140)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [affa10c7a29539ea7cdf0112f16ddd13, get {url=https://localhost/upload/index.php}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.140, chrome: {chromedriverVersion: 121.0.6167.184 (057a8ae7deb..., userDataDir: C:\PROGRA~1\KMSpico\temp\sc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61511}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61511/devtoo..., se:cdpVersion: 121.0.6167.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: affa10c7a29539ea7cdf0112f16ddd13]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=121.0.6167.140)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [affa10c7a29539ea7cdf0112f16ddd13, get {url=https://localhost/upload/index.php}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.140, chrome: {chromedriverVersion: 121.0.6167.184 (057a8ae7deb..., userDataDir: C:\PROGRA~1\KMSpico\temp\sc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61511}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61511/devtoo..., se:cdpVersion: 121.0.6167.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: affa10c7a29539ea7cdf0112f16ddd13
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+at testBase.BaseClass.setup(BaseClass.java:95)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginn()[pri:0, instance:testCases.tc_2_Loginpage@351d00c0]" started-at="2024-05-10T13:00:40 GMT-07:00" name="loginn" finished-at="2024-05-10T13:00:40 GMT-07:00" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=121.0.6167.140)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [affa10c7a29539ea7cdf0112f16ddd13, get {url=https://localhost/upload/index.php}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.140, chrome: {chromedriverVersion: 121.0.6167.184 (057a8ae7deb..., userDataDir: C:\PROGRA~1\KMSpico\temp\sc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61511}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61511/devtoo..., se:cdpVersion: 121.0.6167.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: affa10c7a29539ea7cdf0112f16ddd13]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=121.0.6167.140)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [affa10c7a29539ea7cdf0112f16ddd13, get {url=https://localhost/upload/index.php}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.140, chrome: {chromedriverVersion: 121.0.6167.184 (057a8ae7deb..., userDataDir: C:\PROGRA~1\KMSpico\temp\sc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61511}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61511/devtoo..., se:cdpVersion: 121.0.6167.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: affa10c7a29539ea7cdf0112f16ddd13
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+at testBase.BaseClass.setup(BaseClass.java:95)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginn -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testCases.tc_2_Loginpage@351d00c0]" started-at="2024-05-10T13:00:40 GMT-07:00" name="afterClass" finished-at="2024-05-10T13:00:40 GMT-07:00" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- testCases.tc_2_Loginpage -->
+      <class name="testCases.Tc_1_AccountRegistration">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.Tc_1_AccountRegistration@f6efaab]" started-at="2024-05-10T13:00:23 GMT-07:00" name="setup" finished-at="2024-05-10T13:00:32 GMT-07:00" duration-ms="9453" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=121.0.6167.140)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [718e3791d74c58295e2e60ad39bc282d, get {url=https://localhost/upload/index.php}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.140, chrome: {chromedriverVersion: 121.0.6167.184 (057a8ae7deb..., userDataDir: C:\PROGRA~1\KMSpico\temp\sc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61484}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61484/devtoo..., se:cdpVersion: 121.0.6167.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 718e3791d74c58295e2e60ad39bc282d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=121.0.6167.140)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [718e3791d74c58295e2e60ad39bc282d, get {url=https://localhost/upload/index.php}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.140, chrome: {chromedriverVersion: 121.0.6167.184 (057a8ae7deb..., userDataDir: C:\PROGRA~1\KMSpico\temp\sc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61484}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61484/devtoo..., se:cdpVersion: 121.0.6167.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 718e3791d74c58295e2e60ad39bc282d
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+at testBase.BaseClass.setup(BaseClass.java:95)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="implement()[pri:0, instance:testCases.Tc_1_AccountRegistration@f6efaab]" started-at="2024-05-10T13:00:32 GMT-07:00" name="implement" finished-at="2024-05-10T13:00:32 GMT-07:00" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=121.0.6167.140)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [718e3791d74c58295e2e60ad39bc282d, get {url=https://localhost/upload/index.php}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.140, chrome: {chromedriverVersion: 121.0.6167.184 (057a8ae7deb..., userDataDir: C:\PROGRA~1\KMSpico\temp\sc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61484}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61484/devtoo..., se:cdpVersion: 121.0.6167.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 718e3791d74c58295e2e60ad39bc282d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=121.0.6167.140)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [718e3791d74c58295e2e60ad39bc282d, get {url=https://localhost/upload/index.php}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.140, chrome: {chromedriverVersion: 121.0.6167.184 (057a8ae7deb..., userDataDir: C:\PROGRA~1\KMSpico\temp\sc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61484}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61484/devtoo..., se:cdpVersion: 121.0.6167.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 718e3791d74c58295e2e60ad39bc282d
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+at testBase.BaseClass.setup(BaseClass.java:95)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- implement -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testCases.Tc_1_AccountRegistration@f6efaab]" started-at="2024-05-10T13:00:32 GMT-07:00" name="afterClass" finished-at="2024-05-10T13:00:32 GMT-07:00" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- testCases.Tc_1_AccountRegistration -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

@@ -1,0 +1,4 @@
+07:53:51.706 [main] INFO  testCases.Tc_1_AccountRegistration - starting
+07:53:51.825 [main] INFO  testCases.Tc_1_AccountRegistration - my account clicking
+07:53:51.955 [main] INFO  testCases.Tc_1_AccountRegistration - my registerr clicking
+07:53:57.680 [main] INFO  testCases.tc_2_Loginpage - hitting on account ->login
